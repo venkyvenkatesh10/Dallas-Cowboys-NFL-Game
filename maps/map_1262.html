@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4097a73f08b873356e6819ab5b816f8f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4097a73f08b873356e6819ab5b816f8f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4097a73f08b873356e6819ab5b816f8f = L.map(
+                "map_4097a73f08b873356e6819ab5b816f8f",
+                {
+                    center: [32.75034452615681, -97.10863549809324],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ade1bc0e072a7900e7607f0bcea0bf2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0ade1bc0e072a7900e7607f0bcea0bf2.addTo(map_4097a73f08b873356e6819ab5b816f8f);
+        
+    
+            var marker_759ae5d0f855ab088f11d01f855c3374 = L.marker(
+                [32.7473, -97.0945],
+                {}
+            ).addTo(map_4097a73f08b873356e6819ab5b816f8f);
+        
+    
+            var icon_29213eed426e7fb9289024a904f7bc72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_759ae5d0f855ab088f11d01f855c3374.setIcon(icon_29213eed426e7fb9289024a904f7bc72);
+        
+    
+        var popup_703a56983a5060545b8c1bf5bf8b5129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a0cf7294bf7e134f2c173ef455493ce = $(`<div id="html_5a0cf7294bf7e134f2c173ef455493ce" style="width: 100.0%; height: 100.0%;">AT&T Stadium</div>`)[0];
+                popup_703a56983a5060545b8c1bf5bf8b5129.setContent(html_5a0cf7294bf7e134f2c173ef455493ce);
+            
+        
+
+        marker_759ae5d0f855ab088f11d01f855c3374.bindPopup(popup_703a56983a5060545b8c1bf5bf8b5129)
+        ;
+
+        
+    
+    
+            var circle_f554c4c36b5466edf3d6ab8c6451c09b = L.circle(
+                [32.7473, -97.0945],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7620.0, "stroke": true, "weight": 3}
+            ).addTo(map_4097a73f08b873356e6819ab5b816f8f);
+        
+    
+            var marker_5bf59775696f93fd4fa82ce07235ac4c = L.marker(
+                [32.75034452615681, -97.10863549809324],
+                {}
+            ).addTo(map_4097a73f08b873356e6819ab5b816f8f);
+        
+    
+            var icon_93a6c302c96ff6bcbc1c5a10f253aa17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5bf59775696f93fd4fa82ce07235ac4c.setIcon(icon_93a6c302c96ff6bcbc1c5a10f253aa17);
+        
+    
+        var popup_1e27530402889a69434cca55b31cf0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f333d59031ee09128d4697afae4bf5f9 = $(`<div id="html_f333d59031ee09128d4697afae4bf5f9" style="width: 100.0%; height: 100.0%;">Fitbit</div>`)[0];
+                popup_1e27530402889a69434cca55b31cf0a7.setContent(html_f333d59031ee09128d4697afae4bf5f9);
+            
+        
+
+        marker_5bf59775696f93fd4fa82ce07235ac4c.bindPopup(popup_1e27530402889a69434cca55b31cf0a7)
+        ;
+
+        
+    
+</script>
+</html>
